@@ -1,0 +1,116 @@
+.projectsSection {
+    padding-bottom: 80px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.header h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.projectItem {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.iconBox {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin-bottom: 25px;
+}
+
+.projectItem h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.projectItem p {
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.techStack span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    font-weight: 600;
+    padding: 4px 10px;
+    background: rgba(157, 78, 221, 0.1);
+    border-radius: 4px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.linkBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.linkBtn:hover {
+    text-decoration: underline;
+}
+
+.githubBtn {
+    color: var(--text-muted);
+    transition: color 0.3s;
+}
+
+.githubBtn:hover {
+    color: white;
+}
+
+.decoration {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .projectItem {
+        padding: 30px;
+    }
+
+    .projectItem h3 {
+        font-size: 1.5rem;
+    }
+}
