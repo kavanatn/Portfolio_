@@ -10,21 +10,42 @@ const projects = [
         desc: "Production-ready end-to-end AI pipeline for processing long-form audio/video into structured text with modular Flask APIs.",
         tech: ["Python", "Flask", "Whisper", "LLaMA", "NLP"],
         link: "#",
-        github: "https://github.com/kavanatn"
+        github: "https://github.com/kavanatn/AI-Video-Transcription-and-summarization"
     },
     {
         title: "EchoVerse – Audiobook Generator",
         desc: "Generative AI prototype using IBM Watsonx Granite models for intelligent text rewriting and multi-voice TTS.",
         tech: ["Python", "Streamlit", "Watsonx", "Gen AI"],
         link: "https://echoverse-app.streamlit.app/",
-        github: "https://github.com/kavanatn"
+        github: "https://github.com/kavanatn/EchoVerse"
     },
     {
         title: "HealthPal AI – Health System",
         desc: "Full-stack healthcare platform with Mistral AI integration for contextual lifestyle recommendations via chatbot.",
         tech: ["Python", "Flask", "Mistral AI", "REST API"],
         link: "https://healthpal-ai.onrender.com",
-        github: "https://github.com/kavanatn"
+        github: "https://github.com/kavanatn/HealthPalAI"
+    },
+    {
+        title: "AI PlantDocBot",
+        desc: "Conversational plant disease diagnosis bot using computer vision (CNN) and NLP (BERT) for treatment plans.",
+        tech: ["Python", "TensorFlow", "PyTorch", "BERT", "CNN"],
+        link: "#",
+        github: "https://github.com/kavanatn/AI_PlantDocBot"
+    },
+    {
+        title: "Chess Using ML",
+        desc: "Interactive chess engine powered by a neural network with one-hot board encoding for position evaluation.",
+        tech: ["Python", "TensorFlow", "Keras", "Streamlit"],
+        link: "https://chess-using-ml.vercel.app",
+        github: "https://github.com/kavanatn/Chess-using-ML"
+    },
+    {
+        title: "Ezee-Go-Analyzer",
+        desc: "Web accessibility analyzer that scans URLs for WCAG compliance, including alt-text, contrast, and structure.",
+        tech: ["Python", "Streamlit", "BeautifulSoup", "Requests"],
+        link: "#",
+        github: "https://github.com/kavanatn/Ezee-Go-Analyzer"
     }
 ]
 
