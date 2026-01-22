@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Award, ShieldCheck, Zap, Server } from 'lucide-react'
+import { Award, ShieldCheck, Zap, Server, Database, Search, FileCheck } from 'lucide-react'
 import styles from './Certifications.module.css'
 
 const certs = [
@@ -37,17 +37,21 @@ export default function Certifications() {
             <h2 className="gradient-text" style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '50px' }}>Certifications</h2>
             <div className={styles.grid}>
                 {certs.map((cert, idx) => (
-                    <motion.div
+                    <motion.a
                         key={idx}
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         className={styles.card + " glass"}
+                        style={{ textDecoration: 'none', color: 'inherit' }}
                     >
                         <div className={styles.icon} style={{ color: cert.color }}>
                             {cert.icon}
                         </div>
                         <h3>{cert.title}</h3>
                         <p>{cert.issuer}</p>
-                    </motion.div>
+                    </motion.a>
                 ))}
             </div>
         </section>
