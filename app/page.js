@@ -22,8 +22,8 @@ export default function Home() {
           </p>
         </section>
 
-        <Skills />
         <Projects />
+        <Skills />
         <Experience />
         <Certifications />
 
