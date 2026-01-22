@@ -36,7 +36,7 @@ export default function Hero() {
                         <a href="#projects" className={styles.primaryBtn}>
                             View My Work <ArrowRight size={18} />
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
                             Resume <FileText size={18} />
                         </a>
                         <div className={styles.socials}>
