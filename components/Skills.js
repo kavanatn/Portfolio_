@@ -1,24 +1,39 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Brain, Code, Settings, Cloud, Layers, Rocket } from 'lucide-react'
 import styles from './Skills.module.css'
 
 const skillGroups = [
     {
         title: "AI/ML & Generative AI",
-        skills: ["LLMs", "TensorFlow", "PyTorch", "Whisper", "LLaMA", "CNNs", "scikit-learn"]
+        icon: <Brain size={24} />,
+        skills: ["TensorFlow", "PyTorch", "Keras", "LLMs", "CNN", "Generative AI", "scikit-learn"]
     },
     {
-        title: "Backend & APIs",
-        skills: ["Python", "Java", "Flask", "FastAPI", "RESTful APIs", "SQL"]
+        title: "Programming Languages",
+        icon: <Code size={24} />,
+        skills: ["Python", "Java", "C", "JavaScript", "SQL"]
     },
     {
-        title: "Cloud & DevOps",
-        skills: ["AWS", "Docker", "Kubernetes", "Git", "Linux", "IBM Cloud"]
+        title: "Layered Development",
+        icon: <Layers size={24} />,
+        skills: ["React", "Next.js", "Flask", "FastAPI", "RESTful APIs", "Streamlit"]
     },
     {
-        title: "Frontend Development",
-        skills: ["Next.js", "React", "JavaScript", "HTML/CSS", "Streamlit"]
+        title: "Cloud & Infrastructure",
+        icon: <Cloud size={24} />,
+        skills: ["AWS", "IBM Cloud", "Docker", "Kubernetes", "Git", "Linux"]
+    },
+    {
+        title: "Tools & Platforms",
+        icon: <Settings size={24} />,
+        skills: ["MongoDB", "Postman", "VS Code", "Jupyter Notebooks"]
+    },
+    {
+        title: "Builder Mindset",
+        icon: <Rocket size={24} />,
+        skills: ["Prototyping", "Adaptability", "Collaboration", "Problem-Solving", "SDLC (Agile)"]
     }
 ]
 
@@ -47,7 +62,10 @@ export default function Skills() {
                         transition={{ delay: idx * 0.1 }}
                         className={styles.skillCard + " glass"}
                     >
-                        <h3>{group.title}</h3>
+                        <div className={styles.cardHeader}>
+                            {group.icon}
+                            <h3>{group.title}</h3>
+                        </div>
                         <div className={styles.skillList}>
                             {group.skills.map((skill, i) => (
                                 <span key={i} className={styles.skillItem}>{skill}</span>

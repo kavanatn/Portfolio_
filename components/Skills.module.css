@@ -28,10 +28,17 @@
     border-color: var(--primary);
 }
 
-.skillCard h3 {
-    font-size: 1.3rem;
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     margin-bottom: 25px;
     color: var(--primary);
+}
+
+.cardHeader h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
 }
 
 .skillList {
