@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react'
+import { Github, Linkedin, Mail, ArrowRight, FileText } from 'lucide-react'
 import styles from './Hero.module.css'
 
 export default function Hero() {
@@ -35,6 +35,9 @@ export default function Hero() {
                     <div className={styles.actions}>
                         <a href="#projects" className={styles.primaryBtn}>
                             View My Work <ArrowRight size={18} />
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
+                            Resume <FileText size={18} />
                         </a>
                         <div className={styles.socials}>
                             <a href="https://github.com/kavanatn" target="_blank" rel="noopener noreferrer"><Github /></a>
